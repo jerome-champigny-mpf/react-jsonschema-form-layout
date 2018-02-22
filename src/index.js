@@ -58,6 +58,7 @@ export default class GridField extends ObjectField {
                                idSchema={idSchema[name]}
                                formData={formData[name]}
                                onChange={this.onPropertyChange(name)}
+                               onFocus={() => {}}
                                onBlur={onBlur}
                                registry={this.props.registry}
                                disabled={disabled}
