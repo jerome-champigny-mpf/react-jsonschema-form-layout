@@ -30,7 +30,7 @@ see [DEMO](https://audibene-labs.github.io/react-jsonschema-form-layout/demo/dis
 # Installation
 
 ```
-yarn add react-jsonschema-form-layout
+yarn add react-jsonschema-form-layouts
 ```
 
 # Usage:

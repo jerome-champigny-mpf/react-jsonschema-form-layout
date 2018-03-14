@@ -1,7 +1,7 @@
 {
-  "name": "react-jsonschema-form-layout",
-  "version": "1.0.4",
-  "description": "react-jsonschema-form-layout React component",
+  "name": "react-jsonschema-form-layouts",
+  "version": "1.0.0",
+  "description": "react-jsonschema-form-layouts React component",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -42,13 +42,13 @@
     "nwb-less": " 0.5.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-dropzone": " 3.11.0",
+    "react-dropzone": "^4.2.9",
     "react-test-renderer": "^16.2.0"
   },
-  "author": "Mario Scheliga <marsch.js@gmail.com>",
+  "author": "Jerome Champigny <jerome.champigny@groupm.com>",
   "homepage": "",
   "license": "MIT",
-  "repository": "https://github.com/audibene-labs/react-jsonschema-form-layout",
+  "repository": "https://github.com/jerome-champigny-mpf/react-jsonschema-form-layouts",
   "keywords": [
     "react-component"
   ],

@@ -3,25 +3,28 @@ import ObjectField from 'react-jsonschema-form/lib/components/fields/ObjectField
 import { retrieveSchema } from 'react-jsonschema-form/lib/utils'
 import { Col } from 'react-bootstrap'
 
-export default class GridField extends ObjectField {
-  state = { firstName: 'hasldf' }
+class GridField extends ObjectField {
+  static defaultProps = ObjectField.defaultProps;
+
+  state = { firstName: 'hasldf' };
+
   render() {
     const {
       uiSchema,
+      formData,
       errorSchema,
       idSchema,
       required,
       disabled,
       readonly,
       onBlur,
-      formData
-    } = this.props
-    const { definitions, fields, formContext } = this.props.registry
-    const { SchemaField, TitleField, DescriptionField } = fields
-    const schema = retrieveSchema(this.props.schema, definitions)
-    const title = (schema.title === undefined) ? '' : schema.title
+    } = this.props;
+    const { definitions, fields, formContext } = this.props.registry;
+    const { SchemaField, TitleField, DescriptionField } = fields;
+    const schema = retrieveSchema(this.props.schema, definitions);
+    const title = (schema.title === undefined) ? '' : schema.title;
 
-    const layout = uiSchema['ui:layout']
+    const layout = uiSchema['ui:layout'];
 
     return (
       <fieldset>
@@ -95,3 +98,9 @@ export default class GridField extends ObjectField {
     )
   }
 }
+
+if (process.env.NODE_ENV !== "production") {
+  GridField.propTypes = ObjectField.propTypes
+}
+
+export default GridField
